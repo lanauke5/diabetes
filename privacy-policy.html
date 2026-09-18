@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy | NaturalHealthOne</title>
+  <meta name="description" content="NaturalHealthOne's practical privacy notice, including what this static website does, what may change at deployment, and how to raise a privacy question.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Jost:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #173f42;
+      --text: #29494b;
+      --teal: #5a9898;
+      --teal-dark: #356f70;
+      --wash: #eaf4f3;
+      --soft: #f7fafa;
+      --paper: #ffffff;
+      --rule: #d5e3e2;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--text); background: var(--paper); font: 17px/1.72 "Jost", Arial, sans-serif; }
+    a { color: var(--teal-dark); text-underline-offset: .18em; }
+    a:hover { color: var(--ink); }
+    a:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
+    .skip-link { position: fixed; z-index: 100; top: 12px; left: 12px; padding: 10px 16px; color: #fff; background: var(--ink); transform: translateY(-170%); }
+    .skip-link:focus { transform: translateY(0); }
+    .site-header { border-bottom: 1px solid var(--rule); background: #fff; }
+    .masthead { width: min(calc(100% - 40px), var(--max)); min-height: 88px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand { color: var(--ink); font: 700 clamp(1.75rem, 3vw, 2.35rem)/1 "Cormorant Garamond", Georgia, serif; text-decoration: none; white-space: nowrap; }
+    .brand span { color: var(--teal); }
+    .primary-nav ul { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 22px; margin: 0; padding: 0; list-style: none; }
+    .primary-nav a { color: var(--ink); font-size: .86rem; font-weight: 600; text-decoration: none; }
+    .primary-nav a:hover { color: var(--teal-dark); text-decoration: underline; }
+    .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--rule); background: var(--wash); }
+    .hero::before { content: ""; position: absolute; inset: 0 auto 0 0; width: clamp(10px, 6vw, 78px); background: var(--teal); }
+    .hero-inner { width: min(calc(100% - 40px), 1040px); margin: auto; padding: clamp(58px, 8vw, 96px) 0 clamp(52px, 7vw, 78px); }
+    .breadcrumb { margin: 0 0 18px; font-size: .82rem; font-weight: 600; }
+    .breadcrumb a { color: var(--teal-dark); }
+    .breadcrumb span { margin: 0 .55em; color: #6a8586; }
+    h1, h2, h3 { color: var(--ink); font-family: "Cormorant Garamond", Georgia, serif; text-wrap: balance; }
+    h1 { margin: 0; font-size: clamp(3.5rem, 8vw, 6.6rem); font-weight: 600; letter-spacing: -.045em; line-height: .92; }
+    .deck { max-width: 790px; margin: 24px 0 18px; font: 500 clamp(1.3rem, 2.5vw, 1.75rem)/1.35 "Cormorant Garamond", Georgia, serif; }
+    .effective { margin: 0; font-size: .86rem; font-weight: 600; }
+    .policy-layout { width: min(calc(100% - 40px), var(--max)); margin: auto; display: grid; grid-template-columns: 245px minmax(0, 735px); gap: clamp(45px, 8vw, 105px); align-items: start; padding: 70px 0 92px; }
+    .contents { position: sticky; top: 24px; padding-top: 18px; border-top: 5px solid var(--teal); }
+    .contents h2 { margin: 0 0 13px; font-size: 1.55rem; }
+    .contents ol { margin: 0; padding-left: 1.25em; }
+    .contents li { margin-bottom: .65em; font-size: .84rem; line-height: 1.45; }
+    article { min-width: 0; }
+    .plain-summary { margin: 0 0 44px; padding: 27px 30px; border-left: 7px solid var(--teal); background: var(--soft); }
+    .plain-summary h2 { margin-top: 0; font-size: 1.9rem; }
+    .plain-summary p:last-child { margin-bottom: 0; }
+    article section { scroll-margin-top: 24px; padding-top: 8px; }
+    article section + section { margin-top: 46px; padding-top: 42px; border-top: 1px solid var(--rule); }
+    h2 { margin: 0 0 .55em; font-size: clamp(2rem, 4vw, 2.7rem); font-weight: 600; line-height: 1.06; }
+    h3 { margin: 1.4em 0 .35em; font-size: 1.45rem; line-height: 1.15; }
+    p { margin: 0 0 1.25em; }
+    ul { padding-left: 1.25em; }
+    article li { margin-bottom: .65em; }
+    .evidence-note { padding: 22px 24px; border: 1px solid var(--rule); background: var(--wash); }
+    .evidence-note p:last-child { margin-bottom: 0; }
+    .data-table { width: 100%; margin: 24px 0; border-collapse: collapse; font-size: .92rem; }
+    .data-table th, .data-table td { padding: 14px 12px; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+    .data-table th { color: var(--ink); background: var(--soft); font-weight: 600; }
+    .data-table th:first-child { width: 31%; }
+    .contact-callout { margin-top: 44px; padding: 30px; color: #fff; background: var(--ink); }
+    .contact-callout h2, .contact-callout a { color: #fff; }
+    .contact-callout h2 { font-size: 2rem; }
+    .contact-callout p:last-child { margin-bottom: 0; }
+    .site-footer { padding: 54px 20px 34px; color: #dce9e9; background: var(--ink); }
+    .footer-inner { width: min(100%, var(--max)); margin: auto; }
+    .footer-brand { margin: 0 0 10px; color: #fff; font: 700 2rem "Cormorant Garamond", Georgia, serif; }
+    .footer-note { max-width: 760px; margin: 0; font-size: .84rem; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px 22px; margin: 25px 0 0; padding: 24px 0 0; border-top: 1px solid #3d6062; list-style: none; }
+    .footer-links a { color: #fff; font-size: .84rem; }
+    .footer-links a[aria-current="page"] { text-decoration-thickness: 2px; }
+    .copyright { margin: 26px 0 0; color: #b8cecf; font-size: .76rem; }
+    .site-footer a:focus-visible { outline-color: #fff; }
+    @media (max-width: 900px) {
+      .masthead { align-items: flex-start; flex-direction: column; padding: 23px 0; }
+      .primary-nav ul { justify-content: flex-start; }
+      .policy-layout { grid-template-columns: 1fr; }
+      .contents { position: static; }
+      .contents ol { columns: 2; column-gap: 36px; }
+    }
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .masthead, .hero-inner, .policy-layout { width: min(calc(100% - 28px), var(--max)); }
+      .hero::before { width: 7px; }
+      .hero-inner { padding-left: 12px; }
+      h1 { font-size: clamp(3rem, 16vw, 4.6rem); }
+      .contents ol { columns: 1; }
+      .plain-summary { padding: 23px 20px; }
+      .table-wrap { overflow-x: auto; }
+      .data-table { min-width: 590px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="masthead">
+      <a class="brand" href="index.html" aria-label="NaturalHealthOne home">NaturalHealth<span>One</span></a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="type-2-diabetes.html">Type 2 diabetes</a></li>
+          <li><a href="prediabetes.html">Prediabetes</a></li>
+          <li><a href="blood-sugar.html">Blood sugar</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="monitoring.html">Monitoring</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span>Privacy</p>
+        <h1>Privacy, stated plainly</h1>
+        <p class="deck">This notice describes what can be established from the current NaturalHealthOne website files, what information you may choose to provide, and what must be confirmed when the site is deployed.</p>
+        <p class="effective">Effective: <time datetime="2026-09-17">September 17, 2026</time></p>
+      </div>
+    </header>
+
+    <div class="policy-layout">
+      <nav class="contents" aria-label="Privacy policy contents">
+        <h2>On this page</h2>
+        <ol>
+          <li><a href="#scope">Scope</a></li>
+          <li><a href="#current-site">Current website</a></li>
+          <li><a href="#information">Information involved</a></li>
+          <li><a href="#forms">Contact form</a></li>
+          <li><a href="#third-parties">Third-party resources</a></li>
+          <li><a href="#health-information">Health information</a></li>
+          <li><a href="#choices">Your choices</a></li>
+          <li><a href="#security-retention">Security and retention</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#changes">Changes</a></li>
+          <li><a href="#contact">Privacy questions</a></li>
+        </ol>
+      </nav>
+
+      <article>
+        <div class="plain-summary">
+          <h2>What this notice does—and does not—claim</h2>
+          <p>The files reviewed for this policy show a static informational website. They do not identify an analytics service, advertising technology, cookie banner, user-account system, newsletter platform, payment processor, or configured contact-form recipient. We therefore do not claim that any named service receives data or that particular deployment logs, cookies, retention periods, or legal bases apply.</p>
+
+<div class="ad-block" style="float:left;margin:0 36px 24px 0;width:300px;flex-shrink:0;"><div class="ad-label">Advertisement</div><div class="ad-slot"><script async src="https://worldppc.click/ads.php?publisher_id=3&website_id=1&type=banner&size=300x250&format=js"></script></div></div>
+
+          <p>The live hosting environment can introduce routine technical processing that is not visible in page files. This notice should be reviewed and updated before deployment and whenever the site adds a form processor, analytics, advertising, embedded media, accounts, purchases, or other data-handling feature.</p>
+        </div>
+
+        <section id="scope">
+          <h2>1. Scope</h2>
+          <p>This Privacy Policy applies to the NaturalHealthOne diabetes-information website and its pages. It explains privacy considerations for visitors reading articles, following links, or using the contact-page draft form.</p>
+          <p>It does not describe the independent practices of websites that NaturalHealthOne links to. Those sites may have their own privacy notices and controls.</p>
+        </section>
+
+        <section id="current-site">
+          <h2>2. The current website</h2>
+          <p>NaturalHealthOne publishes general educational material about diabetes and related health topics. The current page files do not provide registration, sign-in, checkout, subscription, commenting, or patient-portal functions.</p>
+          <div class="evidence-note">
+            <h3>Deployment matters</h3>
+            <p>When any website is delivered over the internet, its hosting and network infrastructure may process technical request information needed to provide, secure, and troubleshoot the service. Depending on deployment, this can include an IP address, request time, requested page, browser or device information, referring page, and diagnostic events. The present files do not identify the host, its settings, or its retention schedule, so this policy does not state a specific practice as fact.</p>
+          </div>
+        </section>
+
+        <section id="information">
+          <h2>3. Information that may be involved</h2>
+          <p>The categories below distinguish what is visible in the current files from what may depend on deployment or on a visitor's choices.</p>
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th scope="col">Category</th>
+                  <th scope="col">Practical explanation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Content you read</th>
+                  <td>The page itself displays health education. The current files do not show a user profile that associates reading history with an account.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Contact details and message text</th>
+                  <td>You may type a name, reply email, topic, page reference, and message into the contact form. In its current form, that information stays in your browser and is not sent by the page.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Technical request data</th>
+                  <td>A deployed host may receive request and security data as described above. The exact fields, uses, access controls, and retention depend on deployment configuration.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Font requests</th>
+                  <td>These pages request Cormorant Garamond and Jost font files from Google Fonts. Your browser may make a direct request to Google when loading a page, which can disclose technical request information to Google under its own terms and privacy practices.</td>
+                </tr>
+                <tr>
+                  <th scope="row">Linked sites</th>
+                  <td>If you follow an external link, the destination may receive ordinary request information and collect data under its own policy.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="forms">
+          <h2>4. Contact form status</h2>
+          <p>The <a href="contact.html">Contact page</a> contains a no-backend form for preparing a message. It is deliberately prevented from submitting because no verified email address or form-processing destination appears in the site files. Completing or checking that form does not deliver the message to NaturalHealthOne.</p>
+<div class="ad-clearfix"></div>
+<!-- Ad Block 728x90 Slot 1 --><div class="ad-leaderboard" style="width:728px;height:90px;margin:1.5rem auto;background:#F0EAE4;border:2px dashed #5A9898;display:flex;align-items:center;justify-content:center;overflow:hidden;"><iframe src="https://worldppc.click/ads.php?publisher_id=3&website_id=1&type=text&size=728x90" width="728" height="90" frameborder="0" scrolling="no" style="border:0;overflow:hidden;width:728px;height:90px;max-width:100%;" loading="lazy"></iframe></div>
+
+          <p>If a delivery service is configured later, this policy and the notice beside the form should first be updated to identify the information sent, why it is used, who receives it, how long it is kept, and which choices are available.</p>
+        </section>
+
+        <section id="third-parties">
+          <h2>5. Third-party resources and links</h2>
+          <p>The pages covered by this policy load font resources from Google Fonts. NaturalHealthOne does not describe Google's practices on its behalf; visitors should consult Google's own published privacy information for that service.</p>
+          <p>Some other pages in this website may load external code or link to third-party health resources, product information, or other websites. A link is not a statement that NaturalHealthOne controls the destination's data practices. Review the destination's privacy notice before providing information.</p>
+          <p>The current files do not provide enough evidence to name any analytics, advertising, affiliate-network, consent-management, or hosting vendor. If such technology is active at deployment, this policy must be supplemented with accurate, service-specific disclosure and any controls required for the audience and location in which the site operates.</p>
+        </section>
+
+        <section id="health-information">
+          <h2>6. Sensitive and health information</h2>
+          <p>NaturalHealthOne is an educational website, not a healthcare provider or patient portal. Do not use the website or contact draft to send medical records, glucose logs, laboratory results, diagnosis details, prescription information, insurance identifiers, payment details, government identification numbers, passwords, or other sensitive information.</p>
+          <p>If you need help with your health, contact a qualified healthcare professional. If you believe there is a medical emergency, contact your local emergency service or go to the nearest emergency department. See the <a href="medical-disclaimer.html">Medical Disclaimer</a>.</p>
+        </section>
+
+        <section id="choices">
+          <h2>7. Your choices and requests</h2>
+          <ul>
+            <li>You can read the site without creating an account because no account feature is present in the current files.</li>
+            <li>You can avoid entering information into the contact draft. The draft can also be cleared by reloading or closing the page.</li>
+            <li>You can use browser settings or extensions to control third-party requests, although blocking resources may change how pages appear or function.</li>
+            <li>You can decide whether to follow links to other websites.</li>
+          </ul>
+          <p>Privacy rights vary by location and depend on whether NaturalHealthOne actually holds information about you. Use the <a href="contact.html">Contact page</a> to prepare a request or question, but note that no delivery channel is configured in the current site. A deployer should establish a working privacy-request channel before publication.</p>
+<!-- Ad Block 728x90 Slot 2 --><div class="ad-leaderboard" style="width:728px;height:90px;margin:1.5rem auto;background:#F0EAE4;border:2px dashed #5A9898;display:flex;align-items:center;justify-content:center;overflow:hidden;"><iframe src="https://worldppc.click/ads.php?publisher_id=3&website_id=2&type=banner&size=728x90" width="728" height="90" frameborder="0" scrolling="no" style="border:0;overflow:hidden;width:728px;height:90px;max-width:100%;" loading="lazy"></iframe></div>
+
+        </section>
+
+        <section id="security-retention">
+          <h2>8. Security, storage, and retention</h2>
+          <p>No method of internet transmission or storage is completely secure. Appropriate safeguards and retention limits depend on the systems selected for hosting and any later data-handling features. Because those systems are not evidenced in the current files, NaturalHealthOne does not state specific encryption, access, deletion, or retention practices here.</p>
+          <p>Before deployment, the site operator should document the live services, limit access, keep software and credentials secure, retain information only as needed for stated purposes, and provide an accurate way to exercise applicable privacy choices.</p>
+        </section>
+
+        <section id="children">
+          <h2>9. Children</h2>
+          <p>The content is written as general health education and is not designed as a service for children to create accounts or submit personal information. The current files do not include accounts or an operational submission channel. A parent, guardian, or appropriate healthcare professional should guide a child's use of online health information.</p>
+        </section>
+
+        <section id="changes">
+          <h2>10. Changes to this policy</h2>
+          <p>This policy may be revised when the website, its deployment, or relevant requirements change. A revised version should display a new effective date and explain material changes when doing so would help readers understand the update. Visitors should review this page periodically.</p>
+        </section>
+
+        <section id="contact" class="contact-callout">
+          <h2>11. Privacy questions</h2>
+          <p>The current site files do not contain a verified privacy email address, postal address, or operational form endpoint. Please see the <a href="contact.html">Contact page</a> for the available draft form and its deployment notice. Do not enter sensitive information.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">NaturalHealthOne</p>
+      <p class="footer-note">Evidence-aware diabetes education for general informational purposes. It does not replace advice, diagnosis, or treatment from a qualified healthcare professional.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="authors.html">Authors</a></li>
+          <li><a href="medical-reviewers.html">Medical Review Board</a></li>
+          <li><a href="editorial-policy.html">Editorial Policy</a></li>
+          <li><a href="medical-review-policy.html">Medical Review Policy</a></li>
+          <li><a href="fact-checking-policy.html">Fact-Checking Policy</a></li>
+          <li><a href="medical-disclaimer.html">Medical Disclaimer</a></li>
+          <li><a href="privacy-policy.html" aria-current="page">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 2026 NaturalHealthOne. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

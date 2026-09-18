@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Use | NaturalHealthOne</title>
+  <meta name="description" content="Practical terms for using NaturalHealthOne's educational diabetes website, including medical limits, permitted use, corrections, links, and policy changes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&amp;family=Jost:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #173f42;
+      --text: #29494b;
+      --teal: #5a9898;
+      --teal-dark: #356f70;
+      --wash: #eaf4f3;
+      --soft: #f7fafa;
+      --paper: #ffffff;
+      --rule: #d5e3e2;
+      --warning-bg: #fff7e8;
+      --warning-border: #b66a27;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--text); background: var(--paper); font: 17px/1.72 "Jost", Arial, sans-serif; }
+    a { color: var(--teal-dark); text-underline-offset: .18em; }
+    a:hover { color: var(--ink); }
+    a:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
+    .skip-link { position: fixed; z-index: 100; top: 12px; left: 12px; padding: 10px 16px; color: #fff; background: var(--ink); transform: translateY(-170%); }
+    .skip-link:focus { transform: translateY(0); }
+    .site-header { border-bottom: 1px solid var(--rule); background: #fff; }
+    .masthead { width: min(calc(100% - 40px), var(--max)); min-height: 88px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand { color: var(--ink); font: 700 clamp(1.75rem, 3vw, 2.35rem)/1 "Cormorant Garamond", Georgia, serif; text-decoration: none; white-space: nowrap; }
+    .brand span { color: var(--teal); }
+    .primary-nav ul { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px 22px; margin: 0; padding: 0; list-style: none; }
+    .primary-nav a { color: var(--ink); font-size: .86rem; font-weight: 600; text-decoration: none; }
+    .primary-nav a:hover { color: var(--teal-dark); text-decoration: underline; }
+    .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--rule); background: var(--wash); }
+    .hero::before { content: ""; position: absolute; inset: 0 auto 0 0; width: clamp(10px, 6vw, 78px); background: var(--teal); }
+    .hero-inner { width: min(calc(100% - 40px), 1040px); margin: auto; padding: clamp(58px, 8vw, 96px) 0 clamp(52px, 7vw, 78px); }
+    .breadcrumb { margin: 0 0 18px; font-size: .82rem; font-weight: 600; }
+    .breadcrumb a { color: var(--teal-dark); }
+    .breadcrumb span { margin: 0 .55em; color: #6a8586; }
+    h1, h2, h3 { color: var(--ink); font-family: "Cormorant Garamond", Georgia, serif; text-wrap: balance; }
+    h1 { margin: 0; font-size: clamp(3.5rem, 8vw, 6.6rem); font-weight: 600; letter-spacing: -.045em; line-height: .92; }
+    .deck { max-width: 790px; margin: 24px 0 18px; font: 500 clamp(1.3rem, 2.5vw, 1.75rem)/1.35 "Cormorant Garamond", Georgia, serif; }
+    .effective { margin: 0; font-size: .86rem; font-weight: 600; }
+    .terms-layout { width: min(calc(100% - 40px), var(--max)); margin: auto; display: grid; grid-template-columns: 245px minmax(0, 735px); gap: clamp(45px, 8vw, 105px); align-items: start; padding: 70px 0 92px; }
+    .contents { position: sticky; top: 24px; padding-top: 18px; border-top: 5px solid var(--teal); }
+    .contents h2 { margin: 0 0 13px; font-size: 1.55rem; }
+    .contents ol { margin: 0; padding-left: 1.25em; }
+    .contents li { margin-bottom: .65em; font-size: .84rem; line-height: 1.45; }
+    article { min-width: 0; }
+    .essential { margin: 0 0 44px; padding: 28px 30px; border-left: 7px solid var(--warning-border); background: var(--warning-bg); }
+    .essential h2 { margin-top: 0; font-size: 1.9rem; }
+    .essential p:last-child { margin-bottom: 0; }
+    article section { scroll-margin-top: 24px; padding-top: 8px; }
+    article section + section { margin-top: 46px; padding-top: 42px; border-top: 1px solid var(--rule); }
+    h2 { margin: 0 0 .55em; font-size: clamp(2rem, 4vw, 2.7rem); font-weight: 600; line-height: 1.06; }
+    h3 { margin: 1.4em 0 .35em; font-size: 1.45rem; line-height: 1.15; }
+    p { margin: 0 0 1.25em; }
+    ul { padding-left: 1.25em; }
+    article li { margin-bottom: .65em; }
+    .use-grid { display: grid; grid-template-columns: 1fr 1fr; margin: 24px 0; border-top: 1px solid var(--rule); }
+    .use-item { padding: 23px 23px 20px 0; border-bottom: 1px solid var(--rule); }
+    .use-item:nth-child(even) { padding-left: 23px; border-left: 1px solid var(--rule); }
+    .use-item h3 { margin-top: 0; }
+    .use-item p { margin: 0; font-size: .93rem; }
+    .medical-note { padding: 25px 27px; border-left: 6px solid var(--teal); background: var(--wash); }
+    .medical-note h3 { margin-top: 0; }
+    .medical-note p:last-child { margin-bottom: 0; }
+    .contact-callout { margin-top: 44px; padding: 30px; color: #fff; background: var(--ink); }
+    .contact-callout h2, .contact-callout a { color: #fff; }
+    .contact-callout h2 { font-size: 2rem; }
+    .contact-callout p:last-child { margin-bottom: 0; }
+    .site-footer { padding: 54px 20px 34px; color: #dce9e9; background: var(--ink); }
+    .footer-inner { width: min(100%, var(--max)); margin: auto; }
+    .footer-brand { margin: 0 0 10px; color: #fff; font: 700 2rem "Cormorant Garamond", Georgia, serif; }
+    .footer-note { max-width: 760px; margin: 0; font-size: .84rem; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 10px 22px; margin: 25px 0 0; padding: 24px 0 0; border-top: 1px solid #3d6062; list-style: none; }
+    .footer-links a { color: #fff; font-size: .84rem; }
+    .footer-links a[aria-current="page"] { text-decoration-thickness: 2px; }
+    .copyright { margin: 26px 0 0; color: #b8cecf; font-size: .76rem; }
+    .site-footer a:focus-visible { outline-color: #fff; }
+    @media (max-width: 900px) {
+      .masthead { align-items: flex-start; flex-direction: column; padding: 23px 0; }
+      .primary-nav ul { justify-content: flex-start; }
+      .terms-layout { grid-template-columns: 1fr; }
+      .contents { position: static; }
+      .contents ol { columns: 2; column-gap: 36px; }
+    }
+    @media (max-width: 600px) {
+      body { font-size: 16px; }
+      .masthead, .hero-inner, .terms-layout { width: min(calc(100% - 28px), var(--max)); }
+      .hero::before { width: 7px; }
+      .hero-inner { padding-left: 12px; }
+      h1 { font-size: clamp(3rem, 16vw, 4.6rem); }
+      .contents ol { columns: 1; }
+      .essential { padding: 23px 20px; }
+      .use-grid { grid-template-columns: 1fr; }
+      .use-item, .use-item:nth-child(even) { padding: 21px 0; border-left: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="masthead">
+      <a class="brand" href="index.html" aria-label="NaturalHealthOne home">NaturalHealth<span>One</span></a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="type-2-diabetes.html">Type 2 diabetes</a></li>
+          <li><a href="prediabetes.html">Prediabetes</a></li>
+          <li><a href="blood-sugar.html">Blood sugar</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="monitoring.html">Monitoring</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span>Terms</p>
+        <h1>Terms for using this website</h1>
+        <p class="deck">These terms set practical boundaries for NaturalHealthOne's general educational content. They should be read with the Medical Disclaimer and Privacy Policy.</p>
+        <p class="effective">Effective: <time datetime="2026-09-17">September 17, 2026</time></p>
+      </div>
+    </header>
+
+    <div class="terms-layout">
+      <nav class="contents" aria-label="Terms of use contents">
+        <h2>On this page</h2>
+        <ol>
+          <li><a href="#agreement">Using the site</a></li>
+          <li><a href="#education">Educational purpose</a></li>
+          <li><a href="#emergencies">Emergencies</a></li>
+          <li><a href="#permitted-use">Permitted use</a></li>
+          <li><a href="#content">Content and updates</a></li>
+          <li><a href="#reviews">Products and reviews</a></li>
+          <li><a href="#external">External links</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#availability">Availability</a></li>
+          <li><a href="#responsibility">Your responsibility</a></li>
+          <li><a href="#changes">Changes</a></li>
+          <li><a href="#contact">Questions</a></li>
+        </ol>
+      </nav>
+
+      <article>
+        <div class="essential">
+          <h2>The essential point</h2>
+          <p>NaturalHealthOne provides general information, not individualized healthcare. Do not use an article, product discussion, or website feature as the sole basis for diagnosis, medication changes, treatment decisions, or delaying care. A qualified healthcare professional who knows your circumstances is the right source for personal medical guidance.</p>
+
+<div class="ad-block" style="float:left;margin:0 36px 24px 0;width:300px;flex-shrink:0;"><div class="ad-label">Advertisement</div><div class="ad-slot"><script async src="https://worldppc.click/ads.php?publisher_id=3&website_id=1&type=banner&size=300x250&format=js"></script></div></div>
+
+        </div>
+
+        <section id="agreement">
+          <h2>1. Using the site</h2>
+          <p>By accessing or using NaturalHealthOne, you agree to follow these Terms of Use. If you do not agree, do not use the site. “Site” in these terms means the NaturalHealthOne diabetes-information pages and their available features.</p>
+          <p>The site is intended for people seeking general educational information. A parent, guardian, or appropriate professional should guide a child's use of online health material.</p>
+        </section>
+
+        <section id="education">
+          <h2>2. Educational purpose, not medical care</h2>
+          <p>Content on the site is for general informational and educational purposes. It is not medical advice, diagnosis, treatment, prescribing, monitoring, or a substitute for care from a physician or other qualified healthcare professional. Reading the site or sending website feedback does not create a clinician-patient relationship.</p>
+          <p>Health information changes, and recommendations can depend on age, pregnancy, health conditions, medications, laboratory results, access to care, and many other factors. Discuss decisions with a qualified professional who can consider your individual circumstances.</p>
+          <div class="medical-note">
+            <h3>Medication and monitoring decisions</h3>
+            <p>Do not start, stop, skip, or change medication, insulin, supplements, diet, exercise, or glucose-monitoring practices solely because of something on this site. If a reading or symptom concerns you, follow the plan agreed with your healthcare team or seek appropriate medical care.</p>
+          </div>
+          <p>For additional detail, read the <a href="medical-disclaimer.html">Medical Disclaimer</a>.</p>
+        </section>
+
+        <section id="emergencies">
+          <h2>3. Medical emergencies</h2>
+          <p>The site and its contact-page draft form are not emergency services and are not monitored for urgent messages. If you think you or someone else may be experiencing a medical emergency, contact your local emergency service or go to the nearest emergency department immediately. Do not wait for a response from this website.</p>
+        </section>
+
+        <section id="permitted-use">
+          <h2>4. Permitted and prohibited use</h2>
+          <p>You may use the site for lawful personal reading, research, and reference. You may link to public pages in a way that does not misrepresent NaturalHealthOne's content or your relationship with the site.</p>
+          <div class="use-grid">
+            <section class="use-item">
+              <h3>Use the site respectfully</h3>
+              <p>Access pages through ordinary means, respect copyright and attribution, and report suspected errors through the available contact process.</p>
+<div class="ad-clearfix"></div>
+<!-- Ad Block 728x90 Slot 1 --><div class="ad-leaderboard" style="width:728px;height:90px;margin:1.5rem auto;background:#F0EAE4;border:2px dashed #5A9898;display:flex;align-items:center;justify-content:center;overflow:hidden;"><iframe src="https://worldppc.click/ads.php?publisher_id=3&website_id=1&type=text&size=728x90" width="728" height="90" frameborder="0" scrolling="no" style="border:0;overflow:hidden;width:728px;height:90px;max-width:100%;" loading="lazy"></iframe></div>
+
+            </section>
+            <section class="use-item">
+              <h3>Do not disrupt access</h3>
+              <p>Do not attempt to damage, overload, disable, bypass, probe, or gain unauthorized access to the site, its hosting, or related systems.</p>
+            </section>
+            <section class="use-item">
+              <h3>Do not misrepresent content</h3>
+              <p>Do not present site material as personalized medical advice, remove context in a misleading way, impersonate an author or reviewer, or imply an endorsement that has not been given.</p>
+            </section>
+            <section class="use-item">
+              <h3>Do not submit sensitive data</h3>
+              <p>Do not place medical records, account credentials, financial details, government identifiers, or other sensitive information in the contact draft.</p>
+            </section>
+          </div>
+          <p>Permission for uses beyond ordinary personal reference, including substantial reproduction or republication, should be obtained before that use. The current files do not provide a verified rights-request channel; see the <a href="contact.html">Contact page</a> for its deployment status.</p>
+        </section>
+
+        <section id="content">
+          <h2>5. Content, sources, and corrections</h2>
+          <p>NaturalHealthOne aims to publish useful, understandable material and describes its standards in the <a href="editorial-policy.html">Editorial Policy</a>, <a href="medical-review-policy.html">Medical Review Policy</a>, and <a href="fact-checking-policy.html">Fact-Checking Policy</a>. Those policies explain editorial goals; they do not turn general content into individualized medical advice.</p>
+          <p>Medical evidence, product details, availability, prices, guidance, and website links can change. Publication or review dates help readers judge recency, but a date does not guarantee that every statement remains current for every location or circumstance. Where information is especially important to a decision, verify it with an appropriate professional or authoritative current source.</p>
+          <p>If you believe a page contains an error, use the <a href="contact.html">Contact page</a> and identify the page, disputed passage, and supporting source. The current form is a no-backend draft and cannot send until a destination is configured.</p>
+        </section>
+
+        <section id="reviews">
+          <h2>6. Products, devices, supplements, and reviews</h2>
+          <p>Discussion of a product, device, app, food, supplement, or service is educational and does not guarantee safety, suitability, availability, performance, coverage, reimbursement, or results. Product specifications and regulatory status can differ by model, version, age group, intended use, and location.</p>
+          <p>Check current instructions, warnings, contraindications, recalls, compatibility, total cost, and applicable regulatory information. For decisions that affect health or treatment, consult a qualified healthcare professional. Supplements and devices can create risks or interact with a care plan.</p>
+<!-- Ad Block 728x90 Slot 2 --><div class="ad-leaderboard" style="width:728px;height:90px;margin:1.5rem auto;background:#F0EAE4;border:2px dashed #5A9898;display:flex;align-items:center;justify-content:center;overflow:hidden;"><iframe src="https://worldppc.click/ads.php?publisher_id=3&website_id=2&type=banner&size=728x90" width="728" height="90" frameborder="0" scrolling="no" style="border:0;overflow:hidden;width:728px;height:90px;max-width:100%;" loading="lazy"></iframe></div>
+
+          <p>Some existing site materials state that affiliate links or advertising may appear. Any commercial relationship should be disclosed where relevant and governed by the site's editorial standards. A link or discussion should not be read as a blanket endorsement.</p>
+        </section>
+
+        <section id="external">
+          <h2>7. External links and resources</h2>
+          <p>The site may link to external websites for references or convenience. NaturalHealthOne does not control their content, availability, security, accessibility, terms, or privacy practices. A link does not necessarily mean that every statement, product, or practice on the destination is endorsed. Review external information and policies before relying on it or providing information.</p>
+        </section>
+
+        <section id="privacy">
+          <h2>8. Privacy and the contact draft</h2>
+          <p>The <a href="privacy-policy.html">Privacy Policy</a> explains what can be established from the current website files and what requires confirmation at deployment. The contact form does not currently transmit or store a message through the page because no backend or verified recipient is configured. Do not enter sensitive information.</p>
+        </section>
+
+        <section id="availability">
+          <h2>9. Availability and website changes</h2>
+          <p>NaturalHealthOne may revise, reorganize, correct, remove, or stop providing pages or features. Access may also be interrupted by maintenance, technical problems, network conditions, security work, or changes made by services involved in deployment. No specific level of uninterrupted availability is promised.</p>
+        </section>
+
+        <section id="responsibility">
+          <h2>10. Your responsibility when using information</h2>
+          <p>You are responsible for evaluating whether general information is appropriate to your purpose and for obtaining professional advice when needed. To the extent permitted by rules that apply to you, you assume the risks of acting on general website information without suitable verification or individualized guidance.</p>
+          <p>Nothing in these terms is intended to exclude a right or responsibility that cannot lawfully be excluded. Because the site files do not establish an operator address, registration, or governing jurisdiction, these terms do not make unsupported statements about a specific court, law, dispute forum, or corporate entity. Those details should be added only if verified before deployment.</p>
+        </section>
+
+        <section id="changes">
+          <h2>11. Changes to these terms</h2>
+          <p>These terms may be updated when the site, its features, or relevant requirements change. An updated page should show a new effective date and, where useful, explain material changes. Continued use after an update means the then-current terms apply to that later use, subject to any rights that cannot be changed this way.</p>
+        </section>
+
+        <section id="contact" class="contact-callout">
+          <h2>12. Questions about these terms</h2>
+          <p>The current files do not contain a verified legal email address, postal address, or operational contact endpoint. Visit the <a href="contact.html">Contact page</a> for the available draft form and an explanation of its deployment status. Do not include sensitive or urgent medical information.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">NaturalHealthOne</p>
+      <p class="footer-note">Evidence-aware diabetes education for general informational purposes. It does not replace advice, diagnosis, or treatment from a qualified healthcare professional.</p>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="authors.html">Authors</a></li>
+          <li><a href="medical-reviewers.html">Medical Review Board</a></li>
+          <li><a href="editorial-policy.html">Editorial Policy</a></li>
+          <li><a href="medical-review-policy.html">Medical Review Policy</a></li>
+          <li><a href="fact-checking-policy.html">Fact-Checking Policy</a></li>
+          <li><a href="medical-disclaimer.html">Medical Disclaimer</a></li>
+          <li><a href="privacy-policy.html">Privacy</a></li>
+          <li><a href="terms.html" aria-current="page">Terms</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; 2026 NaturalHealthOne. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

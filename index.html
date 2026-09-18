@@ -1,0 +1,818 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Diabetes Guidance for Everyday Decisions | NaturalHealthOne</title>
+  <meta name="description" content="Clear, evidence-aware guidance on type 2 diabetes, prediabetes, blood sugar, food, movement, monitoring, devices, supplements, and everyday care.">
+  <meta name="theme-color" content="#173b3b">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://diabetes.naturalhealthone.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Diabetes Guidance for Everyday Decisions | NaturalHealthOne">
+  <meta property="og:description" content="Understand the numbers, compare your options, and prepare better questions for your healthcare team.">
+  <meta property="og:url" content="https://diabetes.naturalhealthone.com/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&amp;family=Jost:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #173b3b;
+      --text: #294747;
+      --teal: #5a9898;
+      --teal-dark: #356f70;
+      --sage: #7c987d;
+      --sage-pale: #e8f0e7;
+      --rose: #a95367;
+      --rose-pale: #f7e9ec;
+      --paper: #f8faf8;
+      --white: #ffffff;
+      --mist: #dfecea;
+      --line: #bdd2cf;
+      --muted: #586b6b;
+      --focus: #d8a456;
+      --max: 1200px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--text);
+      font-family: "Jost", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      text-rendering: optimizeLegibility;
+    }
+    h1, h2, h3, .brand, .footer-brand {
+      color: var(--ink);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      text-wrap: balance;
+    }
+    a { color: var(--teal-dark); text-underline-offset: .19em; }
+    a:hover { text-decoration-thickness: .14em; }
+    a:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+    .skip-link {
+      position: fixed;
+      z-index: 1000;
+      top: 12px;
+      left: 12px;
+      padding: .7rem 1rem;
+      color: var(--white);
+      background: var(--ink);
+      transform: translateY(-160%);
+    }
+    .skip-link:focus { transform: none; }
+    .shell { width: min(calc(100% - 48px), var(--max)); margin-inline: auto; }
+
+    /* Trust and navigation */
+    .trust-bar {
+      color: #eff8f7;
+      background: var(--ink);
+      font-size: .78rem;
+    }
+    .trust-bar .shell {
+      min-height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem 2rem;
+      padding-block: .55rem;
+    }
+    .trust-bar p { margin: 0; }
+    .trust-bar strong { color: #fff; }
+    .trust-bar a { color: #fff; font-weight: 600; }
+    .urgent-note { white-space: nowrap; }
+    .urgent-dot {
+      width: .55rem;
+      height: .55rem;
+      display: inline-block;
+      margin-right: .45rem;
+      border-radius: 50%;
+      background: #eab1bc;
+    }
+    .site-header {
+      position: relative;
+      z-index: 10;
+      background: rgba(255,255,255,.97);
+      border-bottom: 1px solid var(--line);
+    }
+    .masthead {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+    }
+    .brand {
+      flex: 0 0 auto;
+      color: var(--ink);
+      font-size: clamp(1.75rem, 3vw, 2.2rem);
+      font-weight: 700;
+      line-height: 1;
+      text-decoration: none;
+    }
+    .brand span { color: var(--teal); }
+    .brand small {
+      display: block;
+      margin-top: .3rem;
+      color: var(--muted);
+      font: 600 .61rem/1 "Jost", Arial, sans-serif;
+      letter-spacing: .08em;
+    }
+    .primary-nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      gap: .35rem 1.35rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .primary-nav a {
+      color: var(--ink);
+      font-size: .86rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .primary-nav a:hover { color: var(--teal-dark); text-decoration: underline; }
+    .nav-index {
+      padding: .52rem .8rem;
+      border: 1px solid var(--teal-dark);
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(223,236,234,.52) 1px, transparent 1px) 0 0 / 12.5% 100%,
+        var(--white);
+      border-bottom: 1px solid var(--line);
+    }
+    .hero::after {
+      position: absolute;
+      right: -8vw;
+      bottom: -150px;
+      width: 380px;
+      height: 380px;
+      border: 70px solid var(--rose-pale);
+      border-radius: 50%;
+      content: "";
+      opacity: .7;
+    }
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      min-height: 610px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.17fr) minmax(330px, .83fr);
+      gap: clamp(3rem, 8vw, 7.5rem);
+      align-items: center;
+      padding-block: clamp(4.5rem, 9vw, 8rem);
+    }
+    .hero-copy { max-width: 760px; }
+    .hero-note {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      margin: 0 0 1.35rem;
+      color: var(--teal-dark);
+      font-size: .8rem;
+      font-weight: 600;
+    }
+    .hero-note::before {
+      width: 34px;
+      height: 4px;
+      background: var(--rose);
+      content: "";
+    }
+    h1 {
+      max-width: 780px;
+      margin: 0;
+      font-size: clamp(3.55rem, 7.8vw, 7.15rem);
+      font-weight: 600;
+      letter-spacing: -.045em;
+      line-height: .86;
+    }
+    .hero-deck {
+      max-width: 620px;
+      margin: 1.75rem 0 0;
+      color: #365555;
+      font: 500 clamp(1.35rem, 2.4vw, 1.75rem)/1.32 "Cormorant Garamond", Georgia, serif;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .8rem;
+      margin-top: 2rem;
+    }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: .75rem 1.1rem;
+      border: 2px solid var(--ink);
+      color: var(--white);
+      background: var(--ink);
+      font-size: .88rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .button:hover { color: var(--ink); background: var(--mist); }
+    .button.secondary { color: var(--ink); background: var(--white); }
+    .button.secondary:hover { background: var(--sage-pale); }
+
+    .path-panel {
+      position: relative;
+      max-width: 430px;
+      min-height: 430px;
+      justify-self: end;
+      padding: 2.1rem 2rem 1.9rem;
+      color: #e7f1ef;
+      background: var(--ink);
+      box-shadow: 18px 18px 0 var(--mist);
+    }
+    .path-panel h2 {
+      max-width: 310px;
+      margin: 0;
+      color: var(--white);
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 600;
+      line-height: 1.02;
+    }
+    .path-panel > p { max-width: 34ch; margin: .85rem 0 1.4rem; font-size: .88rem; }
+    .path-graphic { width: 100%; height: auto; display: block; overflow: visible; }
+    .path-graphic .grid-line { stroke: #315555; stroke-width: 1; }
+    .path-graphic .trace { fill: none; stroke: #dba2ae; stroke-width: 5; stroke-linecap: round; stroke-linejoin: round; }
+    .path-graphic .point { fill: #dba2ae; stroke: var(--ink); stroke-width: 4; }
+    .path-labels {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .7rem;
+      margin-top: .8rem;
+      padding-top: .9rem;
+      border-top: 1px solid #426364;
+      font-size: .7rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* Shared section system */
+    .section { padding-block: clamp(4rem, 8vw, 7rem); }
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(270px, 420px);
+      gap: 2rem 5rem;
+      align-items: end;
+      margin-bottom: 2.6rem;
+    }
+    .section-head h2 {
+      max-width: 650px;
+      margin: 0;
+      font-size: clamp(2.7rem, 5vw, 4.6rem);
+      font-weight: 600;
+      letter-spacing: -.03em;
+      line-height: .92;
+    }
+    .section-head p { max-width: 52ch; margin: 0; color: var(--muted); }
+    .section-mark {
+      display: block;
+      width: 58px;
+      height: 7px;
+      margin-bottom: 1rem;
+      background: var(--teal);
+    }
+
+    /* Starting paths */
+    .start-section { background: var(--sage-pale); border-bottom: 1px solid #cfddcd; }
+    .start-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      border-top: 1px solid #aebfad;
+      border-bottom: 1px solid #aebfad;
+    }
+    .start-card {
+      position: relative;
+      min-height: 245px;
+      padding: 2rem 2rem 2.2rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .start-card + .start-card { border-left: 1px solid #aebfad; }
+    .start-card::before {
+      position: absolute;
+      top: 0;
+      left: 2rem;
+      width: 0;
+      height: 5px;
+      background: var(--rose);
+      content: "";
+      transition: width .2s ease;
+    }
+    .start-card:hover::before { width: 72px; }
+    .start-card small { color: var(--teal-dark); font-size: .76rem; font-weight: 700; }
+    .start-card h3 { margin: .7rem 0 .6rem; font-size: 2rem; line-height: 1; }
+    .start-card p { margin: 0 0 1rem; font-size: .91rem; }
+    .text-link { color: var(--ink); font-size: .84rem; font-weight: 700; text-decoration: underline; }
+
+    /* Featured editorial */
+    .featured { background: var(--white); }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(330px, .85fr);
+      gap: 1px;
+      background: var(--line);
+      border: 1px solid var(--line);
+    }
+    .lead-feature {
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: clamp(2rem, 5vw, 4.2rem);
+      color: var(--white);
+      background:
+        radial-gradient(circle at 84% 20%, rgba(219,162,174,.82) 0 8px, transparent 9px),
+        radial-gradient(circle at 84% 20%, transparent 0 68px, rgba(90,152,152,.55) 69px 71px, transparent 72px),
+        linear-gradient(145deg, #21494a, var(--ink));
+      text-decoration: none;
+    }
+    .lead-feature small, .feature-item small { font-size: .74rem; font-weight: 700; }
+    .lead-feature small { color: #b8d8d5; }
+    .lead-feature h3 {
+      max-width: 630px;
+      margin: .7rem 0 1rem;
+      color: var(--white);
+      font-size: clamp(2.6rem, 5vw, 4.5rem);
+      font-weight: 600;
+      letter-spacing: -.025em;
+      line-height: .92;
+    }
+    .lead-feature p { max-width: 58ch; margin: 0; color: #d7e6e4; }
+    .lead-feature:hover h3 { text-decoration: underline; text-decoration-thickness: .05em; }
+    .feature-list { display: grid; grid-template-rows: repeat(4, 1fr); }
+    .feature-item {
+      display: grid;
+      grid-template-columns: 7px 1fr;
+      gap: 1.3rem;
+      align-items: center;
+      padding: 1.35rem 1.6rem 1.4rem 0;
+      color: var(--text);
+      background: var(--paper);
+      text-decoration: none;
+    }
+    .feature-item + .feature-item { border-top: 1px solid var(--line); }
+    .feature-color { align-self: stretch; background: var(--sage); }
+    .feature-item:nth-child(2) .feature-color { background: var(--rose); }
+    .feature-item:nth-child(3) .feature-color { background: var(--teal); }
+    .feature-item:nth-child(4) .feature-color { background: var(--ink); }
+    .feature-item small { color: var(--teal-dark); }
+    .feature-item h3 { margin: .25rem 0 .35rem; font-size: 1.5rem; line-height: 1.05; }
+    .feature-item p { margin: 0; color: var(--muted); font-size: .79rem; line-height: 1.5; }
+    .feature-item:hover { background: var(--mist); }
+    .feature-item:hover h3 { text-decoration: underline; }
+
+    /* 13-category index */
+    .topics { background: var(--paper); border-top: 1px solid var(--line); }
+    .topic-index {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+    .topic {
+      min-height: 188px;
+      display: flex;
+      flex-direction: column;
+      padding: 1.45rem 1.35rem 1.25rem;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      color: var(--text);
+      background: var(--white);
+      text-decoration: none;
+    }
+    .topic:nth-child(3n) { background: #f3f7f2; }
+    .topic:nth-child(5n) { background: #fbf3f5; }
+    .topic-symbol {
+      width: 38px;
+      height: 38px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 1rem;
+      border: 1px solid var(--line);
+      color: var(--teal-dark);
+      font: 700 1rem/1 "Cormorant Garamond", Georgia, serif;
+    }
+    .topic h3 { margin: 0 0 .4rem; font-size: 1.55rem; line-height: 1; }
+    .topic p { margin: 0; color: var(--muted); font-size: .78rem; line-height: 1.48; }
+    .topic:hover { color: var(--ink); background: var(--mist); }
+    .topic:hover .topic-symbol { color: var(--white); background: var(--teal-dark); border-color: var(--teal-dark); }
+
+    /* Trust section */
+    .standards {
+      color: #dce9e8;
+      background: var(--ink);
+    }
+    .standards .section-head h2 { color: var(--white); }
+    .standards .section-head p { color: #c8dad8; }
+    .standards .section-mark { background: #dba2ae; }
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: #426364;
+      border: 1px solid #426364;
+    }
+    .trust-card { min-height: 215px; padding: 1.7rem; background: #1d4546; }
+    .trust-card h3 { margin: 0 0 .6rem; color: #fff; font-size: 1.7rem; }
+    .trust-card p { margin: 0 0 1rem; color: #c8d9d7; font-size: .86rem; }
+    .trust-card a { color: #fff; font-size: .82rem; font-weight: 700; }
+    .policy-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem 1.3rem;
+      margin-top: 2rem;
+      padding: 1.4rem 0 0;
+      border-top: 1px solid #426364;
+    }
+    .policy-links a { color: #fff; font-size: .82rem; font-weight: 600; }
+
+    /* Medical notice */
+    .medical-notice { padding-block: clamp(3rem, 6vw, 4.8rem); background: var(--rose-pale); border-bottom: 1px solid #e5c6cd; }
+    .notice-grid {
+      display: grid;
+      grid-template-columns: minmax(220px, .55fr) minmax(0, 1.45fr);
+      gap: 2rem 5rem;
+      align-items: start;
+    }
+    .notice-title {
+      margin: 0;
+      color: #76394a;
+      font-size: clamp(2.4rem, 4vw, 3.5rem);
+      line-height: .95;
+    }
+    .notice-copy { padding-left: 1.5rem; border-left: 7px solid var(--rose); }
+    .notice-copy p { max-width: 75ch; margin: 0 0 .8rem; }
+    .notice-copy p:last-child { margin-bottom: 0; }
+    .notice-copy strong { color: #6e3242; }
+    .notice-copy a { color: #713849; font-weight: 700; }
+
+    /* Footer */
+    .site-footer { padding: 4.5rem 0 2rem; color: #d7e4e2; background: #102f30; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: minmax(260px, 1.4fr) repeat(3, minmax(140px, .6fr));
+      gap: 2.5rem 4rem;
+    }
+    .footer-brand { margin: 0; color: #fff; font-size: 2rem; font-weight: 700; }
+    .footer-brand span { color: #86b5b3; }
+    .footer-about { max-width: 48ch; margin: .85rem 0 0; font-size: .85rem; }
+    .footer-heading { margin: 0 0 .8rem; color: #fff; font-size: .8rem; font-weight: 700; }
+    .footer-links { margin: 0; padding: 0; list-style: none; }
+    .footer-links li + li { margin-top: .45rem; }
+    .footer-links a { color: #d7e4e2; font-size: .8rem; }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem 2rem;
+      margin-top: 3.5rem;
+      padding-top: 1.4rem;
+      border-top: 1px solid #355455;
+      color: #aabfbd;
+      font-size: .74rem;
+    }
+    .footer-bottom p { margin: 0; }
+
+    @media (max-width: 980px) {
+      .trust-bar .shell { align-items: flex-start; flex-direction: column; gap: .2rem; }
+      .urgent-note { white-space: normal; }
+      .masthead { align-items: flex-start; flex-direction: column; padding-block: 1.2rem; gap: 1rem; }
+      .primary-nav ul { justify-content: flex-start; }
+      .hero-grid { grid-template-columns: 1fr; min-height: auto; }
+      .path-panel { width: min(100%, 560px); max-width: none; justify-self: start; }
+      .section-head { grid-template-columns: 1fr; }
+      .topic-index { grid-template-columns: repeat(3, 1fr); }
+      .footer-grid { grid-template-columns: 1.2fr repeat(2, 1fr); }
+      .footer-intro { grid-column: 1 / -1; }
+    }
+    @media (max-width: 760px) {
+      .shell { width: min(calc(100% - 32px), var(--max)); }
+      body { font-size: 16px; }
+      .hero { background: var(--white); }
+      .hero-grid { padding-block: 4rem 5rem; gap: 3rem; }
+      h1 { font-size: clamp(3.35rem, 16vw, 5.3rem); }
+      .path-panel { min-height: 0; padding: 1.6rem; box-shadow: 10px 10px 0 var(--mist); }
+      .start-grid, .feature-grid, .notice-grid { grid-template-columns: 1fr; }
+      .start-card + .start-card { border-top: 1px solid #aebfad; border-left: 0; }
+      .lead-feature { min-height: 410px; }
+      .feature-list { grid-template-rows: none; }
+      .feature-item { min-height: 145px; }
+      .topic-index { grid-template-columns: repeat(2, 1fr); }
+      .trust-grid { grid-template-columns: 1fr; }
+      .trust-card { min-height: 0; }
+      .notice-copy { padding: 1.2rem 0 0; border-top: 7px solid var(--rose); border-left: 0; }
+      .footer-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-bottom { align-items: flex-start; flex-direction: column; }
+    }
+    @media (max-width: 470px) {
+      .brand { font-size: 1.75rem; }
+      .primary-nav ul { gap: .5rem 1rem; }
+      .primary-nav li:nth-child(4), .primary-nav li:nth-child(5) { display: none; }
+      .hero-actions { align-items: stretch; flex-direction: column; }
+      .button { width: 100%; }
+      .path-labels { font-size: .62rem; }
+      .topic-index, .footer-grid { grid-template-columns: 1fr; }
+      .topic { min-height: 158px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+    @media (forced-colors: active) {
+      .button, .topic, .start-card, .trust-card { border: 1px solid CanvasText; }
+      .section-mark, .hero-note::before, .urgent-dot { forced-color-adjust: none; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "NaturalHealthOne Diabetes",
+    "url": "https://diabetes.naturalhealthone.com/",
+    "description": "Evidence-aware educational guidance about diabetes, blood sugar, daily care, monitoring, and health products.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "NaturalHealthOne",
+      "url": "https://diabetes.naturalhealthone.com/about.html"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="trust-bar" aria-label="Health information notice">
+    <div class="shell">
+      <p><strong>Health information you can inspect:</strong> See our <a href="editorial-policy.html">editorial standards</a>, <a href="fact-checking-policy.html">fact-checking process</a>, and <a href="medical-review-policy.html">medical review policy</a>.</p>
+      <p class="urgent-note"><span class="urgent-dot" aria-hidden="true"></span>Not medical advice. In an emergency, call local emergency services.</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="masthead shell">
+      <a class="brand" href="index.html" aria-label="NaturalHealthOne Diabetes home">NaturalHealth<span>One</span><small>Diabetes &amp; metabolic health</small></a>
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="type-2-diabetes.html">Type 2 diabetes</a></li>
+          <li><a href="prediabetes.html">Prediabetes</a></li>
+          <li><a href="blood-sugar.html">Blood sugar</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="monitoring.html">Monitoring</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a class="nav-index" href="#topics">All topics</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid shell">
+        <div class="hero-copy">
+          <p class="hero-note">Independent health education for clearer conversations</p>
+          <h1 id="hero-title">Your numbers are part of the story—not all of it.</h1>
+          <p class="hero-deck">Understand blood sugar, daily habits, monitoring tools, and treatment conversations without hype, blame, or one-size-fits-all promises.</p>
+          <div class="hero-actions">
+            <a class="button" href="type-2-diabetes.html">Understand type 2 diabetes</a>
+            <a class="button secondary" href="prediabetes.html">Learn about prediabetes</a>
+          </div>
+        </div>
+
+        <aside class="path-panel" aria-labelledby="path-title">
+          <h2 id="path-title">Look for patterns, then add context.</h2>
+          <p>A reading can be useful. A trend connected to meals, movement, sleep, stress, and your care plan can support a better question.</p>
+          <svg class="path-graphic" viewBox="0 0 360 145" role="img" aria-labelledby="trace-title trace-desc">
+            <title id="trace-title">A stylized line showing a changing pattern over time</title>
+            <desc id="trace-desc">The illustration connects several points to suggest that glucose readings gain meaning when viewed as a pattern and discussed with a healthcare professional.</desc>
+            <line class="grid-line" x1="0" y1="25" x2="360" y2="25"></line>
+            <line class="grid-line" x1="0" y1="72" x2="360" y2="72"></line>
+            <line class="grid-line" x1="0" y1="119" x2="360" y2="119"></line>
+            <path class="trace" d="M6 101 C45 100, 55 79, 91 82 S135 119, 171 91 S214 29, 252 49 S304 105, 354 63"></path>
+            <circle class="point" cx="91" cy="82" r="7"></circle>
+            <circle class="point" cx="171" cy="91" r="7"></circle>
+            <circle class="point" cx="252" cy="49" r="7"></circle>
+          </svg>
+          <div class="path-labels" aria-hidden="true">
+            <span>Observe</span>
+            <span>Add context</span>
+            <span>Discuss</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section start-section" aria-labelledby="start-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <span class="section-mark" aria-hidden="true"></span>
+            <h2 id="start-title">Start with the question in front of you</h2>
+          </div>
+          <p>Diabetes care is personal. These starting points explain common terms and decisions, while your healthcare team can apply them to your history, medicines, access, and goals.</p>
+        </div>
+        <div class="start-grid">
+          <a class="start-card" href="blood-sugar.html">
+            <small>When a result is confusing</small>
+            <h3>Make sense of blood sugar</h3>
+            <p>Learn what can influence a reading, why timing matters, and how patterns differ from isolated numbers.</p>
+            <span class="text-link">Explore blood sugar</span>
+          </a>
+          <a class="start-card" href="nutrition.html">
+            <small>When food advice feels rigid</small>
+            <h3>Build meals around real life</h3>
+            <p>Explore carbohydrates, fiber, protein, fats, portions, and meal planning without forbidden-food lists.</p>
+            <span class="text-link">Explore nutrition</span>
+          </a>
+          <a class="start-card" href="monitoring.html">
+            <small>When data becomes overwhelming</small>
+            <h3>Use monitoring with purpose</h3>
+            <p>Understand meters, sensors, A1C, logging, and the questions that turn data into a useful care conversation.</p>
+            <span class="text-link">Explore monitoring</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section featured" aria-labelledby="featured-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <span class="section-mark" aria-hidden="true"></span>
+            <h2 id="featured-title">Featured guidance</h2>
+          </div>
+          <p>Practical, full-length guides from the NaturalHealthOne Editorial Team, with safety limits stated as clearly as potential benefits.</p>
+        </div>
+
+        <div class="feature-grid">
+          <a class="lead-feature" href="reviews/continuous-monitor-review.html">
+            <small>Monitoring guide</small>
+            <h3>Choose a glucose sensor around the life you actually lead</h3>
+            <p>Compare alerts, scanning, sharing, connectivity, ongoing access, and safe backup plans before focusing on feature counts.</p>
+          </a>
+          <div class="feature-list">
+            <a class="feature-item" href="reviews/diabetes-app-review.html">
+              <span class="feature-color" aria-hidden="true"></span>
+              <span><small>Digital health</small><h3>A diabetes app should reduce work</h3><p>Evaluate logging effort, privacy, coaching, exports, and subscription costs.</p></span>
+            </a>
+            <a class="feature-item" href="reviews/diabetes-supplement-review.html">
+              <span class="feature-color" aria-hidden="true"></span>
+              <span><small>Supplements</small><h3>Evidence, safety, and label quality</h3><p>Read beyond promises and protect prescribed care.</p></span>
+            </a>
+            <a class="feature-item" href="reviews/insulin-pen-review.html">
+              <span class="feature-color" aria-hidden="true"></span>
+              <span><small>Medication devices</small><h3>Insulin pens: fit, technique, and safety</h3><p>Understand compatibility, dosing details, storage, needles, and training.</p></span>
+            </a>
+            <a class="feature-item" href="reviews/fitness-tracker-review.html">
+              <span class="feature-color" aria-hidden="true"></span>
+              <span><small>Movement and wearables</small><h3>Useful signals, clearly defined limits</h3><p>Put activity, heart-rate, and sleep estimates in the right context.</p></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section topics" id="topics" aria-labelledby="topics-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <span class="section-mark" aria-hidden="true"></span>
+            <h2 id="topics-title">Explore every topic</h2>
+          </div>
+          <p>Browse all 13 NaturalHealthOne diabetes hubs, from foundational education to everyday routines, monitoring tools, product guides, and independent reviews.</p>
+        </div>
+
+        <div class="topic-index">
+          <a class="topic" href="type-2-diabetes.html"><span class="topic-symbol" aria-hidden="true">T2</span><h3>Type 2 diabetes</h3><p>Causes, risk factors, insulin resistance, and living well over time.</p></a>
+          <a class="topic" href="prediabetes.html"><span class="topic-symbol" aria-hidden="true">Pre</span><h3>Prediabetes</h3><p>Screening, lab ranges, risk, and sustainable next steps.</p></a>
+          <a class="topic" href="blood-sugar.html"><span class="topic-symbol" aria-hidden="true">BG</span><h3>Blood sugar</h3><p>Fasting, after-meal, morning, stress, and sleep-related patterns.</p></a>
+          <a class="topic" href="nutrition.html"><span class="topic-symbol" aria-hidden="true">N</span><h3>Nutrition</h3><p>Balanced meals, carbohydrates, fiber, fats, protein, and snacks.</p></a>
+          <a class="topic" href="exercise.html"><span class="topic-symbol" aria-hidden="true">Move</span><h3>Exercise</h3><p>Walking, strength, aerobic activity, safety, and starting gently.</p></a>
+          <a class="topic" href="weight-management.html"><span class="topic-symbol" aria-hidden="true">W</span><h3>Weight management</h3><p>Supportive, sustainable approaches without shame or quick fixes.</p></a>
+          <a class="topic" href="sleep-stress.html"><span class="topic-symbol" aria-hidden="true">Rest</span><h3>Sleep &amp; stress</h3><p>Rest, cortisol, routines, relaxation, and metabolic context.</p></a>
+          <a class="topic" href="monitoring.html"><span class="topic-symbol" aria-hidden="true">A1C</span><h3>Monitoring</h3><p>Meters, CGMs, A1C, timing, logs, and trend interpretation.</p></a>
+          <a class="topic" href="supplements.html"><span class="topic-symbol" aria-hidden="true">Rx?</span><h3>Supplements</h3><p>Evidence, quality, interactions, and questions for a pharmacist.</p></a>
+          <a class="topic" href="complications.html"><span class="topic-symbol" aria-hidden="true">Care</span><h3>Complications</h3><p>Prevention and care for the heart, kidneys, eyes, nerves, and feet.</p></a>
+          <a class="topic" href="devices.html"><span class="topic-symbol" aria-hidden="true">Tech</span><h3>Devices</h3><p>Glucose tools, health technology, travel gear, and daily-use aids.</p></a>
+          <a class="topic" href="best.html"><span class="topic-symbol" aria-hidden="true">Pick</span><h3>Best picks</h3><p>Selection guides that explain criteria, tradeoffs, safety, and fit.</p></a>
+          <a class="topic" href="reviews.html"><span class="topic-symbol" aria-hidden="true">Rev</span><h3>Reviews</h3><p>Independent comparisons of devices, apps, supplements, and tools.</p></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section standards" aria-labelledby="standards-title">
+      <div class="shell">
+        <div class="section-head">
+          <div>
+            <span class="section-mark" aria-hidden="true"></span>
+            <h2 id="standards-title">Trust should be verifiable</h2>
+          </div>
+          <p>Health content should make its authorship, review status, evidence process, limitations, and commercial boundaries easy to find—not ask readers to rely on a badge.</p>
+        </div>
+
+        <div class="trust-grid">
+          <article class="trust-card">
+            <h3>Who we are</h3>
+            <p>Read about the site’s purpose and the people or editorial team responsible for its content. We do not add unnamed credentials to create authority.</p>
+            <a href="about.html">About NaturalHealthOne</a><br>
+            <a href="authors.html">Meet our authors</a>
+          </article>
+          <article class="trust-card">
+            <h3>How review works</h3>
+            <p>Our policy explains when medical review applies. A page should identify its reviewer and review date when that review has occurred.</p>
+            <a href="medical-reviewers.html">Medical reviewers</a><br>
+            <a href="medical-review-policy.html">Medical review policy</a>
+          </article>
+          <article class="trust-card">
+            <h3>How we handle evidence</h3>
+            <p>See how content is developed, checked, corrected, and kept separate from diagnosis or individualized treatment advice.</p>
+            <a href="editorial-policy.html">Editorial policy</a><br>
+            <a href="fact-checking-policy.html">Fact-checking policy</a>
+          </article>
+        </div>
+        <div class="policy-links" aria-label="Editorial and trust links">
+          <a href="about.html">About</a>
+          <a href="authors.html">Authors</a>
+          <a href="medical-reviewers.html">Medical reviewers</a>
+          <a href="editorial-policy.html">Editorial policy</a>
+          <a href="medical-review-policy.html">Medical review policy</a>
+          <a href="fact-checking-policy.html">Fact-checking policy</a>
+          <a href="medical-disclaimer.html">Medical disclaimer</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="medical-notice" aria-labelledby="notice-title">
+      <div class="notice-grid shell">
+        <h2 class="notice-title" id="notice-title">Important health and emergency notice</h2>
+        <div class="notice-copy">
+          <p><strong>This website provides general education, not medical advice, diagnosis, treatment, or an emergency service.</strong> It cannot account for your symptoms, medical history, medicines, pregnancy, lab results, or personal glucose targets. Do not start, stop, or change insulin, diabetes medicine, supplements, monitoring, or a care plan based on this site.</p>
+          <p>Discuss personal decisions with a qualified healthcare professional who knows your history. If you have severe symptoms, loss of consciousness, trouble breathing, signs of dangerously high or low blood sugar, or believe you may have an emergency, <strong>contact local emergency services immediately.</strong> Do not wait for a website, app, or device reading. Read the <a href="medical-disclaimer.html">full medical disclaimer</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <div class="footer-grid">
+        <div class="footer-intro">
+          <p class="footer-brand">NaturalHealth<span>One</span></p>
+          <p class="footer-about">Plain-language education for understanding diabetes and preparing informed conversations with your healthcare team. Educational use only.</p>
+        </div>
+        <nav aria-label="Footer topic links">
+          <p class="footer-heading">Popular topics</p>
+          <ul class="footer-links">
+            <li><a href="type-2-diabetes.html">Type 2 diabetes</a></li>
+            <li><a href="prediabetes.html">Prediabetes</a></li>
+            <li><a href="blood-sugar.html">Blood sugar</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="monitoring.html">Monitoring</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer trust links">
+          <p class="footer-heading">Trust &amp; standards</p>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="authors.html">Authors</a></li>
+            <li><a href="medical-reviewers.html">Medical reviewers</a></li>
+            <li><a href="editorial-policy.html">Editorial policy</a></li>
+            <li><a href="medical-disclaimer.html">Medical disclaimer</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Footer legal and contact links">
+          <p class="footer-heading">Site information</p>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="privacy-policy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of use</a></li>
+            <li><a href="fact-checking-policy.html">Fact-checking policy</a></li>
+            <li><a href="medical-review-policy.html">Medical review policy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 NaturalHealthOne. All rights reserved.</p>
+        <p>For emergencies, contact your local emergency services. This site does not provide emergency care.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
