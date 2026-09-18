@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How to Choose a Continuous Glucose Monitor | NaturalHealthOne</title>
+  <meta name="description" content="An evidence-aware CGM guide covering sensor systems, glucose lag, alerts, cost and access, skin care, confirmatory fingersticks, and patient fit.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,600&family=Jost:wght@400;500;600&display=swap');
+
+    :root {
+      --teal: #5A9898;
+      --teal-dark: #356F70;
+      --ink: #173F42;
+      --text: #29494B;
+      --wash: #EAF4F3;
+      --paper: #FFFFFF;
+      --rule: #D5E3E2;
+      --soft: #F7FAFA;
+      --ad: #EEF1F1;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--paper);
+      font-family: "Jost", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.72;
+    }
+    a { color: var(--teal-dark); text-underline-offset: .18em; }
+    a:hover { color: var(--ink); }
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--ink);
+      outline-offset: 4px;
+      border-radius: 2px;
+    }
+    .skip-link {
+      position: fixed;
+      z-index: 100;
+      top: 12px;
+      left: 12px;
+      padding: 10px 16px;
+      background: var(--ink);
+      color: #fff;
+      transform: translateY(-160%);
+    }
+    .skip-link:focus { transform: translateY(0); }
+    .site-footer a:focus-visible { outline-color: #fff; }
+    .site-header { border-bottom: 1px solid var(--rule); background: #fff; }
+    .masthead {
+      width: min(calc(100% - 40px), var(--max));
+      margin: auto;
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+    .brand {
+      color: var(--ink);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(1.75rem, 3vw, 2.35rem);
+      font-weight: 700;
+      line-height: 1;
+      text-decoration: none;
+    }
+    .brand span { color: var(--teal); }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px 24px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    nav a { color: var(--ink); font-size: .88rem; font-weight: 600; text-decoration: none; }
+    nav a[aria-current="page"] { border-bottom: 3px solid var(--teal); }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: var(--wash);
+      border-bottom: 1px solid var(--rule);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: clamp(12px, 7vw, 92px);
+      background: var(--teal);
+    }
+    .hero-inner {
+      width: min(calc(100% - 40px), 1040px);
+      margin: auto;
+      padding: clamp(64px, 9vw, 116px) 0 clamp(58px, 8vw, 94px);
+    }
+    .section-name {
+      margin: 0 0 18px;
+      color: var(--teal-dark);
+      font-size: .82rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+    }
+    h1, h2, h3, blockquote { font-family: "Cormorant Garamond", Georgia, serif; color: var(--ink); }
+    h1 {
+      max-width: 940px;
+      margin: 0;
+      font-size: clamp(3.15rem, 8vw, 6.75rem);
+      font-weight: 600;
+      letter-spacing: -.045em;
+      line-height: .9;
+    }
+    .deck {
+      max-width: 740px;
+      margin: 28px 0 24px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: clamp(1.35rem, 2.6vw, 1.8rem);
+      line-height: 1.32;
+    }
+    .byline { margin: 0; font-size: .9rem; }
+    .byline strong { color: var(--ink); }
+    .page-grid {
+      width: min(calc(100% - 40px), var(--max));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 720px) 300px;
+      gap: clamp(48px, 8vw, 108px);
+      align-items: start;
+      padding: 72px 0 88px;
+    }
+    article { min-width: 0; }
+    article p { margin: 0 0 1.4em; }
+    .opening::first-letter {
+      float: left;
+      margin: .05em .12em 0 0;
+      color: var(--teal-dark);
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 5.2rem;
+      font-weight: 600;
+      line-height: .72;
+    }
+    h2 {
+      margin: 2.2em 0 .55em;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 600;
+      letter-spacing: -.02em;
+      line-height: 1.05;
+    }
+    h3 { margin: 0 0 .35em; font-size: 1.55rem; line-height: 1.12; }
+    .verdict {
+      margin: 34px 0 42px;
+      padding: 26px 28px;
+      border-left: 7px solid var(--teal);
+      background: var(--wash);
+    }
+    .verdict h2 { margin: 0 0 8px; font-size: 1.8rem; }
+    .verdict p:last-child { margin-bottom: 0; }
+    .criteria {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 24px 0 10px;
+      border-top: 1px solid var(--rule);
+    }
+    .criterion { padding: 24px 24px 20px 0; border-bottom: 1px solid var(--rule); }
+    .criterion:nth-child(even) { padding-left: 24px; border-left: 1px solid var(--rule); }
+    .criterion p { margin: 0; font-size: .95rem; }
+    blockquote {
+      position: relative;
+      margin: 62px 0;
+      padding: 36px 4px 34px 52px;
+      border-top: 2px solid var(--teal);
+      border-bottom: 2px solid var(--teal);
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      font-weight: 600;
+      line-height: 1.03;
+    }
+    blockquote::before {
+      content: "“";
+      position: absolute;
+      top: 19px;
+      left: 0;
+      color: var(--teal);
+      font-size: 4.5rem;
+      line-height: 1;
+    }
+    .fit-list { margin: 22px 0 34px; padding: 0; list-style: none; }
+    .fit-list li { padding: 16px 0 16px 30px; border-top: 1px solid var(--rule); }
+    .fit-list li:last-child { border-bottom: 1px solid var(--rule); }
+    .fit-list li::before { content: "•"; float: left; margin-left: -24px; color: var(--teal); font-size: 1.4rem; }
+    .checklist { padding-left: 1.25em; }
+    .checklist li { margin-bottom: .55em; padding-left: .3em; }
+    .cta {
+      margin-top: 42px;
+      padding: 34px;
+      color: #fff;
+      background: var(--ink);
+    }
+    .cta h2 { margin: 0 0 10px; color: #fff; font-size: 2rem; }
+    .cta p { max-width: 580px; }
+    .cta-link {
+      display: inline-block;
+      margin-top: 4px;
+      padding: 13px 20px;
+      color: var(--ink);
+      background: #fff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .cta-link:hover { color: #fff; background: var(--teal-dark); }
+    .disclosure {
+      margin-top: 22px;
+      padding: 18px 20px;
+      border: 1px solid var(--rule);
+      font-size: .86rem;
+      line-height: 1.55;
+    }
+    aside { position: sticky; top: 24px; }
+    .ad-label { margin: 0 0 7px; color: #557073; font-size: .7rem; letter-spacing: .08em; text-align: center; }
+    .ad-placeholder {
+      width: 300px;
+      height: 250px;
+      display: grid;
+      place-items: center;
+      border: 1px solid #C9D1D1;
+      color: #647576;
+      background: var(--ad);
+      font-size: .8rem;
+    }
+    .side-note { margin-top: 30px; padding-top: 22px; border-top: 4px solid var(--teal); }
+    .side-note h2 { margin: 0 0 10px; font-size: 1.65rem; }
+    .side-note p { margin: 0; font-size: .9rem; line-height: 1.6; }
+    .related { padding: 70px 20px 78px; background: var(--soft); border-top: 1px solid var(--rule); }
+    .related-inner { width: min(100%, var(--max)); margin: auto; }
+    .related h2 { margin: 0 0 28px; }
+    .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .card {
+      min-height: 205px;
+      padding: 26px;
+      border-top: 5px solid var(--teal);
+      background: #fff;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .card:hover { background: var(--wash); }
+    .card h3 { margin-bottom: 12px; }
+    .card p { margin: 0; font-size: .92rem; }
+    .site-footer { padding: 54px 20px; color: #DDEAEA; background: var(--ink); }
+    .footer-inner { width: min(100%, var(--max)); margin: auto; }
+    .footer-brand { margin: 0 0 18px; color: #fff; font-family: "Cormorant Garamond", Georgia, serif; font-size: 2rem; }
+    .disclaimer { max-width: 900px; font-size: .86rem; line-height: 1.65; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin: 24px 0 0; padding: 0; list-style: none; }
+    .footer-links a { color: #fff; }
+    .copyright { margin-top: 30px; font-size: .78rem; }
+
+    @media (max-width: 900px) {
+      .masthead { align-items: flex-start; flex-direction: column; padding: 24px 0; }
+      nav ul { justify-content: flex-start; }
+      .page-grid { grid-template-columns: 1fr; }
+      aside { position: static; width: 300px; margin: auto; }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 16px; }
+      .masthead, .hero-inner, .page-grid { width: min(calc(100% - 28px), var(--max)); }
+      .hero::before { width: 7px; }
+      .hero-inner { padding-left: 12px; }
+      h1 { font-size: clamp(2.9rem, 16vw, 4.4rem); }
+      .criteria, .card-grid { grid-template-columns: 1fr; }
+      .criterion, .criterion:nth-child(even) { padding: 20px 0; border-left: 0; }
+      blockquote { padding-left: 38px; }
+      .cta { padding: 26px 22px; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to article</a>
+  <header class="site-header">
+    <div class="masthead">
+      <a class="brand" href="../index.html" aria-label="NaturalHealthOne home">NaturalHealth<span>One</span></a>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../best.html">Best picks</a></li>
+          <li><a href="../monitoring.html">Monitoring</a></li>
+          <li><a href="../blood-sugar.html">Blood sugar</a></li>
+          <li><a href="../devices.html">Devices</a></li>
+          <li><a href="glucose-meter-review.html">Meter guide</a></li>
+          <li><a href="cgm-review.html" aria-current="page">CGM guide</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <header class="hero">
+      <div class="hero-inner">
+        <p class="section-name">Independent device guide / Continuous glucose monitors</p>
+        <h1 id="article-title">Choosing a CGM beyond the headline features</h1>
+        <p class="deck">Sensor wear, alert design, access, skin tolerance, and a plan for unexpected readings matter as much as data frequency.</p>
+        <p class="byline">By <strong>NaturalHealthOne Editorial Team</strong> &nbsp;|&nbsp; Updated September 17, 2026</p>
+      </div>
+    </header>
+
+    <div class="page-grid">
+      <p class="opening">A continuous glucose monitor changes how you see glucose, because it replaces isolated dots with a curve, and that curve explains more in a week than a month of fingersticks ever will. But the decision to wear one is not really about the sensor. It is about whether you have a question worth answering, and whether you can get one through coverage or at a price you can sustain.</p>
+      <div class="ad-block"><div class="ad-label">Advertisement</div><div class="ad-slot"><script async src="https://worldppc.click/ads.php?publisher_id=3&amp;website_id=1&amp;type=banner&amp;size=300x250&amp;format=js"></script></div></div>
+      <div class="ad-clearfix"></div>
+
+      <section aria-labelledby="what-a-sensor-actually-measures-heading"><h2 id="what-a-sensor-actually-measures-heading">What a sensor actually measures</h2>
+        <p>A CGM estimates glucose in the fluid under your skin, not in your blood. That fluid lags blood by several minutes, and the gap is widest exactly when glucose is moving fastest.</p>
+        <p>This is why a sensor can show a direction that looks different from a fingerstick taken at the same moment, and why both can be telling the truth.</p>
+      </section>
+
+      <section aria-labelledby="the-alert-question-nobody-asks-first-heading"><h2 id="the-alert-question-nobody-asks-first-heading">The alert question nobody asks first</h2>
+        <p>Alert design matters more than most people expect, because alerts you cannot tune get turned off, and alerts that cry wolf get ignored.</p>
+        <p>Before committing to a system, ask how alerts are set, whether you can adjust them, and what happens at night.</p>
+      </section>
+
+      <section aria-labelledby="skin-tolerance-and-wear-length-heading"><h2 id="skin-tolerance-and-wear-length-heading">Skin tolerance and wear length</h2>
+        <p>Some people react to the adhesive, and a sensor that itches its way off after two days never delivers a usable pattern.</p>
+        <p>Wear length also changes the value per sensor, so compare cost per day rather than cost per box.</p>
+      </section>
+
+      <section aria-labelledby="when-a-fingerstick-still-wins-heading"><h2 id="when-a-fingerstick-still-wins-heading">When a fingerstick still wins</h2>
+        <p>Before treating a suspected low or a rapid change, confirm with a fingerstick. That is not a flaw of the technology, it is how it is designed to be used.</p>
+        <p>And if your fingersticks already answer your questions, adding a sensor may add cost without adding any insight.</p>
+      </section>
+
+      <section class="verdict" aria-labelledby="review-heading">
+        <h2 id="review-heading">The short version</h2>
+        <p>A continuous glucose monitor is a question-answering tool, not a permanent answer. It is most valuable when you define one specific question first, such as what a usual breakfast does, and then stop wearing it once that question is answered.</p>
+      </section>
+
+      <section aria-labelledby="criteria-heading">
+        <h2 id="criteria-heading">What we actually compare</h2>
+        <p>These are the criteria that decide whether a product earns a place in your routine. They are deliberately not about brands.</p>
+        <div class="criteria">
+        <section class="criterion"><h3>Lag and accuracy</h3><p>Sensors read interstitial fluid, which lags blood. Ask about accuracy during rapid change, not just at rest.</p></section>
+        <section class="criterion"><h3>Alert flexibility</h3><p>Alerts you cannot tune get muted. Ask how they are set, and what happens overnight.</p></section>
+        <section class="criterion"><h3>Cost per day</h3><p>Compare cost per day of wear, accounting for sensor life, not the price of a single box.</p></section>
+        <section class="criterion"><h3>Coverage rules</h3><p>Coverage often depends on diagnosis and insulin use, so ask what applies to you before assuming anything.</p></section>
+        </div>
+      </section>
+
+      <div class="ad-clearfix"></div>
+      <div class="ad-leaderboard">
+<iframe src="https://worldppc.click/ads.php?publisher_id=3&amp;website_id=1&amp;type=text&amp;size=728x90" width="728" height="90" frameborder="0" scrolling="no" loading="lazy" title="Advertisement"></iframe>
+</div>
+
+      <blockquote><p>Define one question before you start, and stop when that question is answered.</p></blockquote>
+
+      <section aria-labelledby="fit-heading">
+        <h2 id="fit-heading">Which approach fits which person</h2>
+        <ul class="fit-list">
+        <li><strong>If you use insulin:</strong> Alert design and accuracy during rapid change matter most, because that is where treatment decisions happen.</li>
+        <li><strong>If you have type 2 without insulin:</strong> A short defined window of wear often answers the real question, then you can stop.</li>
+        <li><strong>If you have sensitive skin:</strong> Test adhesive tolerance on one sensor before committing to a long-term supply.</li>
+        <li><strong>If you are paying yourself:</strong> Compare cost per day, and set a clear stopping point so the purchase has an endpoint.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="guidance-heading">
+        <h2 id="guidance-heading">What to bring to your next appointment</h2>
+        <ol class="checklist">
+        <li>Ask whether a sensor is covered for your situation, and for how long.</li>
+        <li>Define the one question you want answered before you start.</li>
+        <li>Ask about accuracy limits during rapid glucose change.</li>
+        <li>Check how alerts are set and whether you can adjust them.</li>
+        <li>Confirm unfamiliar readings with a fingerstick before acting.</li>
+        <li>Bring the summary and the pattern to your next visit.</li>
+        </ol>
+        <p>None of this replaces your clinician. It makes the time you get more useful.</p>
+      </section>
+
+      <div class="ad-clearfix"></div>
+      <div class="ad-leaderboard">
+<iframe src="https://worldppc.click/ads.php?publisher_id=3&amp;website_id=1&amp;type=text&amp;size=728x90" width="728" height="90" frameborder="0" scrolling="no" loading="lazy" title="Advertisement"></iframe>
+</div>
+
+      <section class="cta" aria-labelledby="cta-heading">
+        <h2 id="cta-heading">Bring these details to your next visit</h2>
+        <p>Each item gives your clinician the context needed to turn a general guide into advice that fits your situation.</p>
+        <a class="cta-link" href="../devices.html">Explore the Devices hub</a>
+      </section>
+      <p class="disclosure"><strong>How we evaluate CGMs: we compare accuracy claims against published clinical behaviour, alert design, wear length, cost per day, and access. We do not rank brands, accept payment for placement, or claim to have tested devices ourselves. Indications and coverage rules differ by country and change often, so confirm the current situation before you commit.</strong></p>
+
+      </div>
+
+      <aside aria-label="Advertisement and evidence note">
+        <p class="ad-label">Advertisement</p>
+        <section class="side-note"><h2>Read the label</h2>
+          <p>CGM indications, compatible devices, interfering substances, imaging precautions, and treatment-decision rules vary by system and can change. Use the current official instructions.</p>
+
+        </section>
+      </aside>
+    </div>
+
+    <section class="related" aria-labelledby="related-heading">
+      <div class="related-inner">
+        <h2 id="related-heading">Continue exploring</h2>
+        <div class="card-grid">
+          <a class="card" href="../monitoring.html">
+            <h3>Monitoring essentials</h3>
+            <p>Build a workable routine for interpreting patterns and preparing useful questions for a care visit.</p>
+          </a>
+          <a class="card" href="../blood-sugar.html">
+            <h3>Blood sugar basics</h3>
+            <p>See why meals, activity, sleep, stress, medicines, and illness can influence glucose.</p>
+          </a>
+          <a class="card" href="../nutrition.html">
+            <h3>Nutrition guidance</h3>
+            <p>Explore balanced, practical eating information without turning one sensor response into a rigid rule.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-brand">NaturalHealthOne</p>
+      <p class="disclaimer"><strong>Medical disclaimer:</strong> This content is for general education and is not medical advice, diagnosis, or treatment. CGM suitability, glucose targets, alert settings, and responses to readings are individualized. Consult a qualified healthcare professional who knows your history before making health or medication decisions. Do not delay seeking professional care because of information on this site. If you have severe symptoms, signs of dangerously high or low glucose, loss of consciousness, breathing difficulty, or another emergency, contact local emergency services immediately. Official device instructions and advice from your treating team take priority over this article.</p>
+      <ul class="footer-links">
+        <li><a href="../index.html">NaturalHealthOne home</a></li>
+        <li><a href="../best.html">Best picks</a></li>
+        <li><a href="../monitoring.html">Monitoring</a></li>
+        <li><a href="../devices.html">Devices</a></li>
+      </ul>
+      <p class="copyright">© 2026 NaturalHealthOne. Educational use only.</p>
+    </div>
+  </footer>
+</body>
+</html>
